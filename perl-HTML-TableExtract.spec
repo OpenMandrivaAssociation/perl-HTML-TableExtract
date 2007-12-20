@@ -16,6 +16,7 @@ BuildRequires:	perl-devel
 %endif
 Buildarch:	noarch
 BuildRequires:  perl(HTML::Parser)
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 HTML::TableExtract is a module that simplifies the extraction
