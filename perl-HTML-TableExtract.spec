@@ -1,7 +1,7 @@
 %define module	HTML-TableExtract
 %define name	perl-%{module}
 %define version	2.10
-%define release	%mkrel 2
+%define release	%mkrel 4
 
 Name:		%{name}
 Version:	%{version}
