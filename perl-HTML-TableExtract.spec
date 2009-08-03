@@ -1,22 +1,22 @@
-%define module	HTML-TableExtract
-%define name	perl-%{module}
-%define version	2.10
-%define release	%mkrel 4
+%define upstream_name	 HTML-TableExtract
+%define upstream_version 2.10
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-Summary:	%{module} module for perl
-License:	GPL or Artistic
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:	%{upstream_name} module for perl
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/HTML/%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
 %endif
-Buildarch:	noarch
 BuildRequires:  perl(HTML::Parser)
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+Buildarch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 HTML::TableExtract is a module that simplifies the extraction
@@ -27,7 +27,7 @@ or some combination of the three. See the module documentation
 for details.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -48,4 +48,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/HTML
 %{_mandir}/*/*
-
