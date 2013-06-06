@@ -1,6 +1,5 @@
 %define upstream_name	 HTML-TableExtract
-%define upstream_version 2.10
-
+%define upstream_version 2.11
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 2.11
 Release:	1
