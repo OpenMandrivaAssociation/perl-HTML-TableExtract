@@ -1,15 +1,14 @@
 %define upstream_name	 HTML-TableExtract
-%define upstream_version 2.10
-
+%define upstream_version 2.11
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 2.11
+Release:	1
 
 Summary:	%{upstream_name} module for perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-TableExtract-2.11.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTML::Parser)
@@ -99,4 +98,5 @@ Import perl-HTML-TableExtract
 
 * Wed Feb 11 2004 Olivier Thauvin <thauvin@aerov.jussieu.fr> 1.08-2mdk
 - own %%{perl_vendorlib}/HTML
+
 
