@@ -1,14 +1,14 @@
 %define modname	HTML-TableExtract
-%define modver	2.11
+%define modver	2.15
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
-Version:	%perl_convert_version 2.11
-Release:	10
+Version:	%perl_convert_version %{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-TableExtract-2.11.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/HTML/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-devel

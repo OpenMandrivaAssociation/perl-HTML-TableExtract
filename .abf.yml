@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   HTML-TableExtract-2.11.tar.gz: 1d7267b73ee1341bff60ea47fa5cb97d3f55931e
+sources:
+  HTML-TableExtract-2.15.tar.gz: bf279efeed6a52eeba1d76b99cfc15900f6ee2d6
