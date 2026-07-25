@@ -7,7 +7,7 @@ Version:	%{modver}
 Release:	5
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://metacpan.org/dist/%{modname}
+Url:		https://metacpan.org/dist/HTML-TableExtract
 Source0:	https://cpan.metacpan.org/authors/id/M/MS/MSISK/HTML-TableExtract-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
